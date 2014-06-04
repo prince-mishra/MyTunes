@@ -63,32 +63,6 @@
                     </div-->
                     <h1 id="song-name">Dashboard</h1>
                   </header>
-                  <div class="row-fluid">
-                    <div class="span2">
-                        <div class="kpi">45,000</div>
-                        <div><small>total income</small></div>
-                    </div>
-                    <div class="span2">
-                        <div class="kpi">32,403</div>
-                        <div><small>torsdag på fredag</small></div>
-                    </div>
-                    <div class="span2">
-                        <div class="kpi">21,388</div>
-                        <div><small>scores today</small></div>
-                    </div>
-                    <div class="span2">
-                        <div class="kpi">2,105</div>
-                        <div><small>income today</small></div>
-                    </div>
-                    <div class="span2">
-                        <div class="kpi">3,339</div>
-                        <div><small>income yesterday</small></div>
-                    </div>
-                    <div class="span2">
-                        <div class="kpi">8,100</div>
-                        <div><small>income 2012</small></div>
-                    </div>
-                  </div>
                 </section>
                 <!-- Graph
                 ================================================== -->
@@ -143,6 +117,8 @@
           console.log("index ", ind);
           $('.videolink').closest('li').removeClass('selected');
           $($('.videolink')[ind]).closest('li').addClass('selected');
+          var name = playlistnames[i];
+          $('#song-name').html(name);
 
         }
 
