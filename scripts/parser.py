@@ -35,7 +35,7 @@ if __name__=="__main__":
 	if all_ids:
 		firstvideo = all_ids[0]
 	playlistjs = 'var playlist = [' + playlistjs.strip(',') + '], playlistnames=[' + playlistnames.strip(',') + '], playlistdescription=[' + playlistdescription.strip(',') + '];'
-	playliststr = "'" + ','.join(all_ids) + "'"
+	playliststr = "'" + ','.join(all_ids[1:]) + "'"
 
 	print firstvideo
 	print playlistjs
