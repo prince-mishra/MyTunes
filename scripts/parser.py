@@ -15,6 +15,7 @@ if __name__=="__main__":
 	playlistnames = ''
 	playlistdescription = ''
 	platliststr = ''
+	i = 0
 	for item in f_json['data']:
 		link = item.get('link')
 		if link and link.find('https://www.youtube.com/watch?v=') != -1:
@@ -38,7 +39,7 @@ if __name__=="__main__":
 	playliststr = "'" + ','.join(all_ids[1:]) + "'"
 
 	print firstvideo
-	print playlistjs
+	#print playlistjs
 	print playliststr
 	
 	
